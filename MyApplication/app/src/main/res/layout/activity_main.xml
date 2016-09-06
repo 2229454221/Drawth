@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/ib_width"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/widthselector"
+                android:scaleType="fitCenter"/>
+            <ImageButton
+                android:id="@+id/ib_color"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/colorselector"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showPopup">
+        </LinearLayout>
+
+        <com.example.administrator.myapplication.DrawView
+            android:id="@+id/drawView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>
